@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Md Jisan Hossen — AI Undergraduate Researcher</title>
-  <meta name="description" content="Md Jisan Hossen — AI undergraduate researcher at NUIST, China. Multimodal AI, LLM/NLP, computer vision, and deep learning. Expected graduation July 2027." />
+  <meta name="description" content="Md Jisan Hossen — AI undergraduate researcher at NUIST, China. Multimodal AI, generative world models, LLM/NLP, computer vision, and deep learning. First-author preprint on adaptive temporal granularity for causal video generation (DOI 10.5281/zenodo.23395414). Expected graduation July 2027." />
   <meta name="author" content="Md Jisan Hossen" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
@@ -37,7 +37,7 @@
         <p class="hero-role">AI Undergraduate Researcher</p>
         <p class="hero-affil">Nanjing University of Information Science &amp; Technology (NUIST), China</p>
         <p class="hero-grad">B.Sc. in Artificial Intelligence · Expected Graduation: July 2027</p>
-        <span class="hero-focus">Multimodal AI · LLM/NLP · Computer Vision · Deep Learning</span>
+        <span class="hero-focus">Multimodal AI · Generative World Models · LLM/NLP · Computer Vision</span>
         <div class="hero-contact">
           <a class="btn" href="mailto:myprojectjisan@gmail.com">✉ Email</a>
           <a class="btn" href="https://github.com/j1s4nn" target="_blank" rel="noopener">GitHub</a>
@@ -69,6 +69,13 @@
         figure generation, test suites, continuous integration, and full technical write-ups.
       </p>
       <p>
+        My first-author preprint, <em>Jev-Routed Temporal Granularity with Recovery and
+        Hysteresis for Causal Video Generation</em>, is released on Zenodo
+        (<a href="https://doi.org/10.5281/zenodo.23395414" target="_blank" rel="noopener">DOI 10.5281/zenodo.23395414</a>)
+        with a full replication artifact — it audits <em>when</em> adaptive temporal granularity
+        actually pays off for causal video generators, on two GPUs with different compute characters.
+      </p>
+      <p>
         I am seeking <strong>AI/ML research internships</strong> and opportunities toward
         <strong>graduate study (Master's)</strong> in multimodal AI, LLMs, and computer vision.
       </p>
@@ -80,7 +87,7 @@
       <div class="interests">
         <div class="interest">
           <h3>Multimodal AI</h3>
-          <p>Vision–language models, multimodal representation learning, and evaluation of generative world models.</p>
+          <p>Vision–language models, multimodal representation learning, and adaptive computation for generative video world models.</p>
         </div>
         <div class="interest">
           <h3>LLM / NLP</h3>
@@ -101,9 +108,74 @@
     <section id="research">
       <h2 class="section-title">Publications &amp; Research Projects</h2>
       <p class="note">
-        Peer-reviewed publications: none yet. The research-grade projects below are self-directed
-        studies; several are being written up as manuscripts.
+        One first-author preprint (Zenodo, DOI) with a full replication artifact. Peer-reviewed
+        publications: none yet. The research-grade projects below are self-directed studies; several
+        are being written up as manuscripts.
       </p>
+
+      <div class="entry pub">
+        <div class="entry-head">
+          <h3 class="entry-title">Jev-Routed Temporal Granularity with Recovery and Hysteresis for Causal Video Generation</h3>
+          <span class="entry-meta">2026 · Preprint (Zenodo)</span>
+        </div>
+        <p class="entry-desc">
+          <span class="entry-label">Preprint — DOI 10.5281/zenodo.23395414.</span> Causal video
+          generators emit a rollout one temporal chunk at a time, which invites spending fine
+          per-frame computation only where a segment is hard. Realizing that idea requires three
+          preconditions that are usually assumed rather than measured: a mode that is genuinely
+          cheaper on the deployment hardware, a signal that predicts hard segments before generation,
+          and an independent endpoint that certifies the trade.
+        </p>
+        <p class="entry-desc">
+          <span class="entry-label">Approach:</span> audits all three preconditions end to end on
+          <strong>Causal-rCM</strong> (Wan2.1-T2V-1.3B-480p causal text-to-video diffusion), routing
+          per segment among a frame-wise mode (<code>c1-1</code>), a chunk-3 mode (<code>c3-3</code>),
+          and a near-zero-cost <strong>hold</strong> mode with a two-threshold controller that adds
+          hysteresis and forced recovery. Routing is driven by the text-only <strong>Jev</strong>
+          System One oracle, which answers typed difficulty, drift-risk, and motion-class questions
+          before a segment is generated. Audits run on a 16 GB Tesla T4 and an A100-SXM4-80GB.
+        </p>
+        <p class="entry-desc">
+          <span class="entry-label">Findings:</span> cost is hardware-conditional — a coarse forward is
+          3.01× a fine forward on the T4 against a 2.33× break-even (so coarse is never cheaper), but on
+          the A100 the ratio falls to 1.60–1.75 and coarse is 1.46× faster in DiT time; a preregistered
+          hand-crafted signal fails (AUROC 0.491) while the text-only Jev oracle reaches AUROC 0.788
+          [0.575, 0.946] at 0.67 s per decision; hysteresis and recovery cut switches (0.50→0.38 on the T4;
+          0.92→0.50 under injected noise on the A100) without worsening regret; and on 24 fresh A100 prompts
+          a single-decision Jev policy saves 1.78 s of DiT time and 7.39 s of total time at a small −0.020
+          CLIP subject-consistency cost — a trade-off, not dominance.
+        </p>
+        <div class="tags"><span class="tag">Preprint</span><span class="tag">Zenodo DOI</span><span class="tag">PyTorch</span><span class="tag">Diffusion Transformers</span><span class="tag">Causal Video Generation</span><span class="tag">World Models</span></div>
+        <p class="pub-links">
+          <a href="https://doi.org/10.5281/zenodo.23395414" target="_blank" rel="noopener">DOI</a>
+          <a href="https://github.com/j1s4nn/jev-adaptive-granularity-WM" target="_blank" rel="noopener">Code &amp; artifacts</a>
+          <a href="https://j1s4nn.github.io/jev-adaptive-granularity-WM/" target="_blank" rel="noopener">Project page</a>
+          <a href="https://www.kaggle.com/datasets/ajjisan/jev-adaptive-granularity-figures" target="_blank" rel="noopener">Figures</a>
+          <a href="https://www.kaggle.com/datasets/ajjisan/jev-adaptive-granularity-videos" target="_blank" rel="noopener">Videos</a>
+        </p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title"><a href="https://github.com/j1s4nn/jev-adaptive-granularity-WM" target="_blank" rel="noopener">jev-adaptive-granularity-WM — Replication Artifact</a></h3>
+          <span class="entry-meta">2026 · Research artifact</span>
+        </div>
+        <p class="entry-desc">
+          <span class="entry-label">Artifact:</span> the official code, locked protocols, calibration
+          freezes, and audit artifacts behind the preprint above — a <code>src/</code> package for
+          causal-rCM inference, controller, uncertainty, and evaluation; 50 audit, calibration, and
+          figure-generation scripts; 34 reproducible experiment job definitions (phase 0–5c plus
+          RQ3/RQ4); and JSON/JSONL/CSV results for every phase. The study is deliberately
+          evidence-preserving: negative and failed experiments are reported as evidence.
+        </p>
+        <div class="tags"><span class="tag">PyTorch</span><span class="tag">Wan2.1</span><span class="tag">Diffusion Transformers</span><span class="tag">Kaggle</span><span class="tag">Reproducibility</span></div>
+        <p class="pub-links">
+          <a href="https://doi.org/10.5281/zenodo.23395414" target="_blank" rel="noopener">DOI</a>
+          <a href="https://j1s4nn.github.io/jev-adaptive-granularity-WM/" target="_blank" rel="noopener">Project page</a>
+          <a href="https://www.kaggle.com/datasets/ajjisan/jev-adaptive-granularity-figures" target="_blank" rel="noopener">Figures</a>
+          <a href="https://www.kaggle.com/datasets/ajjisan/jev-adaptive-granularity-videos" target="_blank" rel="noopener">Videos</a>
+        </p>
+      </div>
 
       <div class="entry">
         <div class="entry-head">
@@ -184,6 +256,34 @@
     <!-- ===== Projects (Applied / Engineering) ===== -->
     <section id="projects">
       <h2 class="section-title">Projects</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title"><a href="https://github.com/j1s4nn/duomind" target="_blank" rel="noopener">duomind — Jev + Small Local LLM (System 1 / System 2)</a></h3>
+          <span class="entry-meta">LLM system</span>
+        </div>
+        <p class="entry-desc">
+          Pairs a small local LLM (System 2) with the Jev model (System 1) to make a small model faster
+          and more accurate — OpenAI-compatible, private, and cheap to run locally inside Kilo Code and
+          Cline. A project page is served at
+          <a href="https://j1s4nn.github.io/duomind" target="_blank" rel="noopener">j1s4nn.github.io/duomind</a>.
+        </p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">LLM</span><span class="tag">Jev</span><span class="tag">OpenAI-compatible</span><span class="tag">Ollama</span></div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title"><a href="https://github.com/j1s4nn/jevXagent" target="_blank" rel="noopener">jevXagent — Transparent Proxy for AI Coding Agents</a></h3>
+          <span class="entry-meta">Developer tooling</span>
+        </div>
+        <p class="entry-desc">
+          A transparent proxy that routes AI coding-agent traffic to cut latency and token cost. The
+          repository reports reducing response times from 2.4 s to 890 ms (roughly 3× faster and ~80%
+          cheaper) through a routing layer it calls the Line J architecture, working with Kilo Code,
+          Cline, and Claude Code.
+        </p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">LLM proxy</span><span class="tag">Routing</span><span class="tag">Cost optimization</span><span class="tag">Kilo Code</span></div>
+      </div>
 
       <div class="entry">
         <div class="entry-head">
@@ -268,8 +368,9 @@
         <p class="edu-school">Nanjing University of Information Science &amp; Technology (NUIST) — Nanjing, China</p>
         <p class="edu-date">Expected July 2027</p>
         <ul>
+          <li>First-author preprint on adaptive temporal granularity for causal video generation, released on Zenodo with a full replication artifact (<a href="https://doi.org/10.5281/zenodo.23395414" target="_blank" rel="noopener">DOI 10.5281/zenodo.23395414</a>).</li>
           <li>Coursework delivered as full research packages — e.g., deep-learning system identification (Digital Image Processing) with a complete LaTeX paper, reproducible pipeline, and 19 auto-generated figures.</li>
-          <li>Independent research engineering: world-model diagnostics (wmdrift), multi-agent autonomy (ARIA), and controlled vision studies (FER_2026).</li>
+          <li>Independent research engineering: video world-model diagnostics (wmdrift), multi-agent autonomy (ARIA), and controlled vision studies (FER_2026).</li>
         </ul>
       </div>
     </section>
@@ -284,7 +385,7 @@
         </div>
         <div class="skill-row">
           <div class="skill-cat">Deep Learning</div>
-          <div class="skill-list">PyTorch · TensorFlow · Keras</div>
+          <div class="skill-list">PyTorch · TensorFlow · Keras · diffusion models · video generation</div>
         </div>
         <div class="skill-row">
           <div class="skill-cat">Machine Learning</div>

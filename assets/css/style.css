@@ -334,6 +334,42 @@ section:last-of-type {
 }
 
 
+/* ================= Highlighted publication ================= */
+
+.entry.pub {
+  background: var(--accent-soft);
+  border: 1px solid #dce6e8;
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 16px 18px;
+  margin-bottom: 20px;
+}
+
+.entry.pub .entry-title {
+  font-size: 1.18rem;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 10px 0 0;
+  font-size: 0.9rem;
+}
+
+.pub-links a {
+  font-weight: 600;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.86em;
+  background: rgba(31,78,95,0.08);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+
 /* ================= Education ================= */
 
 .edu-item {

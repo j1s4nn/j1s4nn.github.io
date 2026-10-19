@@ -17,6 +17,13 @@ Live at: https://j1s4nn.github.io
 └── README.md
 ```
 
+## Featured
+
+- **Preprint (Zenodo, 2026):** *Jev-Routed Temporal Granularity with Recovery and Hysteresis for
+  Causal Video Generation* — DOI [10.5281/zenodo.23395414](https://doi.org/10.5281/zenodo.23395414).
+  Code and replication artifact: [jev-adaptive-granularity-WM](https://github.com/j1s4nn/jev-adaptive-granularity-WM).
+  Project page: <https://j1s4nn.github.io/jev-adaptive-granularity-WM/>.
+
 ## Sections
 
 About · Research Interests · Publications & Research Projects · Projects ·

@@ -17,6 +17,7 @@
       <span class="nav-name">Md Jisan Hossen</span>
       <nav class="nav-links">
         <a href="#about">About</a>
+        <a href="#highlights">Highlights</a>
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
@@ -41,7 +42,7 @@
         <div class="hero-contact">
           <a class="btn" href="mailto:myprojectjisan@gmail.com">✉ Email</a>
           <a class="btn" href="https://github.com/j1s4nn" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.kaggle.com/j1s4nn" target="_blank" rel="noopener">Kaggle</a>
+          <a class="btn" href="https://www.kaggle.com/ajjisan" target="_blank" rel="noopener">Kaggle</a>
           <a class="btn" href="#contact">Contact</a>
         </div>
       </div>
@@ -54,31 +55,71 @@
     <section id="about" class="about">
       <h2 class="section-title">About</h2>
       <p>
-        I am an Artificial Intelligence undergraduate at
+        I am an <strong>Artificial Intelligence undergraduate</strong> at
         <strong>Nanjing University of Information Science &amp; Technology (NUIST)</strong>, China,
-        building practical deep learning systems and exploring multimodal AI, large language models,
-        natural language processing, and computer vision. My work sits between research engineering
-        — reproducible experiments, fair evaluation protocols, quantitative analysis — and applied AI
-        that ships as a tool other people can run.
+        where I design, train, and rigorously evaluate deep learning systems. My interests span
+        <strong>multimodal AI</strong>, <strong>generative world models</strong>, large language
+        models, computer vision, and reproducible machine learning research.
       </p>
       <p>
-        Most of my day-to-day work is in PyTorch: designing and fine-tuning architectures (CNNs,
-        transformers, LSTMs), building retrieval-augmented generation and agent pipelines with
-        LangChain and FAISS, and writing the evaluation code that decides whether a model actually
-        works. Several of my projects are delivered as complete research packages with automated
-        figure generation, test suites, continuous integration, and full technical write-ups.
+        I work at the intersection of <strong>research engineering</strong> and
+        <strong>applied AI</strong>: I build reproducible experiments, fair evaluation protocols, and
+        quantitative analyses, then ship the result as a tool that other people can actually run. My
+        day-to-day work is in PyTorch — designing and fine-tuning architectures (CNNs, transformers,
+        LSTMs), building retrieval-augmented generation and agent pipelines with LangChain and FAISS,
+        and writing the evaluation code that decides whether a model truly works.
       </p>
       <p>
-        My first-author preprint, <em>Jev-Routed Temporal Granularity with Recovery and
-        Hysteresis for Causal Video Generation</em>, is released on Zenodo
+        My research is <span class="hl">published</span>: my first-author preprint,
+        <em>Jev-Routed Temporal Granularity with Recovery and Hysteresis for Causal Video Generation</em>,
+        is released on <strong>Zenodo</strong>
         (<a href="https://doi.org/10.5281/zenodo.23395414" target="_blank" rel="noopener">DOI 10.5281/zenodo.23395414</a>)
-        with a full replication artifact — it audits <em>when</em> adaptive temporal granularity
-        actually pays off for causal video generators, on two GPUs with different compute characters.
+        together with a <strong>full replication artifact</strong>. The study audits <em>when</em>
+        adaptive temporal granularity genuinely pays off for causal video generators, evaluated on two
+        GPUs with different compute characteristics.
       </p>
       <p>
-        I am seeking <strong>AI/ML research internships</strong> and opportunities toward
+        I am actively seeking <strong>AI/ML research internships</strong> and opportunities toward
         <strong>graduate study (Master's)</strong> in multimodal AI, LLMs, and computer vision.
       </p>
+    </section>
+
+    <!-- ===== Highlights ===== -->
+    <section id="highlights">
+      <h2 class="section-title">Highlights</h2>
+      <div class="highlights">
+        <div class="highlight">
+          <h3>First-author preprint · Zenodo DOI</h3>
+          <p>
+            Authored <em>Jev-Routed Temporal Granularity with Recovery and Hysteresis for Causal Video
+            Generation</em>, published on Zenodo with a complete, reproducible replication artifact.
+          </p>
+        </div>
+        <div class="highlight">
+          <h3>Two-GPU, evidence-first audit</h3>
+          <p>
+            Measured adaptive temporal granularity on a <strong>Tesla T4</strong> and an
+            <strong>A100-SXM4-80GB</strong>; the text-only <strong>Jev</strong> oracle reached
+            <span class="hl">AUROC 0.788</span> where a hand-crafted baseline failed (0.491).
+          </p>
+        </div>
+        <div class="highlight">
+          <h3>Research packages, shipped complete</h3>
+          <p>
+            Projects delivered with <strong>automated figure generation</strong>,
+            <strong>test suites</strong>, <strong>continuous integration</strong>, and full
+            technical write-ups.
+          </p>
+        </div>
+        <div class="highlight">
+          <h3>Controlled comparative studies</h3>
+          <p>
+            A strictly matched <strong>7-model</strong> facial-expression benchmark, and a Z-transform
+            system-identification study reaching <span class="hl">99.7–100% accuracy</span> on
+            held-out samples.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- ===== Research Interests ===== -->
@@ -91,7 +132,7 @@
         </div>
         <div class="interest">
           <h3>LLM / NLP</h3>
-          <p>Language models, retrieval-augmented generation (RAG), agents, and semantic understanding.</p>
+          <p>Language models, retrieval-augmented generation (RAG), autonomous agents, and semantic understanding.</p>
         </div>
         <div class="interest">
           <h3>Computer Vision</h3>
@@ -99,7 +140,7 @@
         </div>
         <div class="interest">
           <h3>Deep Learning</h3>
-          <p>Model development, comparative architecture study, and reproducible evaluation.</p>
+          <p>Model design, controlled architecture comparisons, and reproducible evaluation.</p>
         </div>
       </div>
     </section>
@@ -108,9 +149,9 @@
     <section id="research">
       <h2 class="section-title">Publications &amp; Research Projects</h2>
       <p class="note">
-        One first-author preprint (Zenodo, DOI) with a full replication artifact. Peer-reviewed
-        publications: none yet. The research-grade projects below are self-directed studies; several
-        are being written up as manuscripts.
+        <strong>One first-author preprint</strong> (Zenodo, DOI) with a full replication artifact.
+        Peer-reviewed publications: none yet. The research-grade projects below are self-directed
+        studies; several are being written up as manuscripts.
       </p>
 
       <div class="entry pub">
@@ -133,17 +174,22 @@
           and a near-zero-cost <strong>hold</strong> mode with a two-threshold controller that adds
           hysteresis and forced recovery. Routing is driven by the text-only <strong>Jev</strong>
           System One oracle, which answers typed difficulty, drift-risk, and motion-class questions
-          before a segment is generated. Audits run on a 16 GB Tesla T4 and an A100-SXM4-80GB.
+          before a segment is generated. Audits run on a <strong>16 GB Tesla T4</strong> and an
+          <strong>A100-SXM4-80GB</strong>.
         </p>
         <p class="entry-desc">
-          <span class="entry-label">Findings:</span> cost is hardware-conditional — a coarse forward is
-          3.01× a fine forward on the T4 against a 2.33× break-even (so coarse is never cheaper), but on
-          the A100 the ratio falls to 1.60–1.75 and coarse is 1.46× faster in DiT time; a preregistered
-          hand-crafted signal fails (AUROC 0.491) while the text-only Jev oracle reaches AUROC 0.788
-          [0.575, 0.946] at 0.67 s per decision; hysteresis and recovery cut switches (0.50→0.38 on the T4;
-          0.92→0.50 under injected noise on the A100) without worsening regret; and on 24 fresh A100 prompts
-          a single-decision Jev policy saves 1.78 s of DiT time and 7.39 s of total time at a small −0.020
-          CLIP subject-consistency cost — a trade-off, not dominance.
+          <span class="entry-label">Findings:</span> cost is <strong>hardware-conditional</strong> — a
+          coarse forward is <span class="hl">3.01×</span> a fine forward on the T4 against a
+          <span class="hl">2.33×</span> break-even (so coarse is never cheaper), but on the A100 the
+          ratio falls to <span class="hl">1.60–1.75</span> and coarse is <span class="hl">1.46×</span>
+          faster in DiT time; a preregistered hand-crafted signal fails (AUROC 0.491) while the
+          text-only Jev oracle reaches <span class="hl">AUROC 0.788 [0.575, 0.946]</span> at
+          <span class="hl">0.67 s</span> per decision; hysteresis and recovery cut switches
+          (<span class="hl">0.50→0.38</span> on the T4; <span class="hl">0.92→0.50</span> under
+          injected noise on the A100) without worsening regret; and on 24 fresh A100 prompts a
+          single-decision Jev policy saves <span class="hl">1.78 s</span> of DiT time and
+          <span class="hl">7.39 s</span> of total time at a small <span class="hl">−0.020</span> CLIP
+          subject-consistency cost — a trade-off, not dominance.
         </p>
         <div class="tags"><span class="tag">Preprint</span><span class="tag">Zenodo DOI</span><span class="tag">PyTorch</span><span class="tag">Diffusion Transformers</span><span class="tag">Causal Video Generation</span><span class="tag">World Models</span></div>
         <p class="pub-links">
@@ -163,10 +209,11 @@
         <p class="entry-desc">
           <span class="entry-label">Artifact:</span> the official code, locked protocols, calibration
           freezes, and audit artifacts behind the preprint above — a <code>src/</code> package for
-          causal-rCM inference, controller, uncertainty, and evaluation; 50 audit, calibration, and
-          figure-generation scripts; 34 reproducible experiment job definitions (phase 0–5c plus
-          RQ3/RQ4); and JSON/JSONL/CSV results for every phase. The study is deliberately
-          evidence-preserving: negative and failed experiments are reported as evidence.
+          causal-rCM inference, controller, uncertainty, and evaluation; <strong>50</strong> audit,
+          calibration, and figure-generation scripts; <strong>34</strong> reproducible experiment job
+          definitions (phase 0–5c plus RQ3/RQ4); and JSON/JSONL/CSV results for every phase. The study
+          is deliberately <strong>evidence-preserving</strong>: negative and failed experiments are
+          reported as evidence.
         </p>
         <div class="tags"><span class="tag">PyTorch</span><span class="tag">Wan2.1</span><span class="tag">Diffusion Transformers</span><span class="tag">Kaggle</span><span class="tag">Reproducibility</span></div>
         <p class="pub-links">
@@ -188,10 +235,11 @@
           described qualitatively, not measured, so runs cannot be compared.
         </p>
         <p class="entry-desc">
-          <span class="entry-label">Approach:</span> inference-only metrics combining ORB visual
-          odometry with Umeyama Sim(3) alignment, detrended optical-flow spectral analysis,
-          loop-closure LPIPS, and Laplacian-variance quality trends with optional CLIP alignment.
-          Validated against known ground-truth poses on synthetic fixtures; 24-test suite; runs on CPU.
+          <span class="entry-label">Approach:</span> inference-only metrics combining
+          <strong>ORB visual odometry</strong> with Umeyama Sim(3) alignment, detrended optical-flow
+          spectral analysis, loop-closure LPIPS, and Laplacian-variance quality trends with optional
+          CLIP alignment. Validated against known ground-truth poses on synthetic fixtures;
+          <strong>24-test suite</strong>; runs on CPU.
         </p>
         <div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">PyTorch</span><span class="tag">LPIPS</span><span class="tag">CLIP</span></div>
       </div>
@@ -207,11 +255,11 @@
           solved in isolation.
         </p>
         <p class="entry-desc">
-          <span class="entry-label">Approach:</span> four cooperating agents around a shared 6-DOF
-          quadrotor model — self-healing control (PPO), an LLM pilot (Mistral-7B via llama.cpp),
-          ethical guardrails (CLIP), and a digital twin forecasting energy and wind 60 s ahead
-          (Kalman filter). One command regenerates every figure, telemetry log, and report; 19 unit
-          tests; CI on GitHub Actions.
+          <span class="entry-label">Approach:</span> <strong>four cooperating agents</strong> around a
+          shared 6-DOF quadrotor model — self-healing control (PPO), an LLM pilot (Mistral-7B via
+          llama.cpp), ethical guardrails (CLIP), and a digital twin forecasting energy and wind 60 s
+          ahead (Kalman filter). One command regenerates every figure, telemetry log, and report;
+          <strong>19 unit tests</strong>; CI on GitHub Actions.
         </p>
         <div class="tags"><span class="tag">PyTorch</span><span class="tag">stable-baselines3</span><span class="tag">llama-cpp-python</span><span class="tag">CLIP</span><span class="tag">filterpy</span></div>
       </div>
@@ -226,10 +274,11 @@
           classical baselines when the evaluation protocol is not held constant.
         </p>
         <p class="entry-desc">
-          <span class="entry-label">Approach:</span> a strictly identical protocol — same balanced CK+
-          corpus (2,450 images), same stratified split, same training loop — across KNN, SVM, a
-          from-scratch CNN, VGG16, MobileNetV2, ResNet50, and EfficientNetB0. Results so far:
-          ResNet50 100%, custom CNN 96.3%, EfficientNetB0 93.9%, SVM 73.1%, KNN 49.8% test accuracy.
+          <span class="entry-label">Approach:</span> a <strong>strictly identical protocol</strong> —
+          same balanced CK+ corpus (2,450 images), same stratified split, same training loop — across
+          KNN, SVM, a from-scratch CNN, VGG16, MobileNetV2, ResNet50, and EfficientNetB0. Results so
+          far: <span class="hl">ResNet50 100%</span>, custom CNN <span class="hl">96.3%</span>,
+          EfficientNetB0 93.9%, SVM 73.1%, KNN 49.8% test accuracy.
         </p>
         <div class="tags"><span class="tag">PyTorch</span><span class="tag">torchvision</span><span class="tag">scikit-learn</span><span class="tag">Gradio</span></div>
       </div>
@@ -246,8 +295,9 @@
         <p class="entry-desc">
           <span class="entry-label">Approach:</span> pole-zero maps rendered as 64×64 images paired
           with 128-dim frequency-response vectors, comparing PoleZeroCNN, FreqMLP, and late-fusion
-          FusionNet on 5-class filter classification — 99.7–100% accuracy on 750 held-out samples,
-          with a complete 1,257-line LaTeX paper and 19 auto-generated figures.
+          FusionNet on 5-class filter classification — <span class="hl">99.7–100% accuracy</span> on
+          750 held-out samples, with a complete <strong>1,257-line LaTeX paper</strong> and
+          <strong>19 auto-generated figures</strong>.
         </p>
         <div class="tags"><span class="tag">PyTorch</span><span class="tag">SciPy</span><span class="tag">scikit-learn</span><span class="tag">LaTeX</span></div>
       </div>
@@ -263,9 +313,9 @@
           <span class="entry-meta">LLM system</span>
         </div>
         <p class="entry-desc">
-          Pairs a small local LLM (System 2) with the Jev model (System 1) to make a small model faster
-          and more accurate — OpenAI-compatible, private, and cheap to run locally inside Kilo Code and
-          Cline. A project page is served at
+          Pairs a small local LLM (System 2) with the <strong>Jev</strong> model (System 1) to make a
+          small model <strong>faster and more accurate</strong> — OpenAI-compatible, private, and cheap
+          to run locally inside Kilo Code and Cline. A project page is served at
           <a href="https://j1s4nn.github.io/duomind" target="_blank" rel="noopener">j1s4nn.github.io/duomind</a>.
         </p>
         <div class="tags"><span class="tag">Python</span><span class="tag">LLM</span><span class="tag">Jev</span><span class="tag">OpenAI-compatible</span><span class="tag">Ollama</span></div>
@@ -278,8 +328,9 @@
         </div>
         <p class="entry-desc">
           A transparent proxy that routes AI coding-agent traffic to cut latency and token cost. The
-          repository reports reducing response times from 2.4 s to 890 ms (roughly 3× faster and ~80%
-          cheaper) through a routing layer it calls the Line J architecture, working with Kilo Code,
+          repository reports reducing response times from 2.4 s to <span class="hl">890 ms</span>
+          (roughly <span class="hl">3× faster</span> and <span class="hl">~80% cheaper</span>) through a
+          routing layer it calls the <strong>Line J architecture</strong>, working with Kilo Code,
           Cline, and Claude Code.
         </p>
         <div class="tags"><span class="tag">Python</span><span class="tag">LLM proxy</span><span class="tag">Routing</span><span class="tag">Cost optimization</span><span class="tag">Kilo Code</span></div>
@@ -291,9 +342,9 @@
           <span class="entry-meta">LLM agent</span>
         </div>
         <p class="entry-desc">
-          A LangChain ReAct agent (gpt-4o-mini) that routes between FAISS-backed RAG over uploaded
-          documents (MiniLM embeddings) and live web search, with multi-turn memory and a fully
-          exposed reasoning trace, served through FastAPI and Streamlit.
+          A LangChain <strong>ReAct</strong> agent (gpt-4o-mini) that routes between FAISS-backed
+          <strong>RAG</strong> over uploaded documents (MiniLM embeddings) and live web search, with
+          multi-turn memory and a fully exposed reasoning trace, served through FastAPI and Streamlit.
         </p>
         <div class="tags"><span class="tag">LangChain</span><span class="tag">FAISS</span><span class="tag">OpenAI API</span><span class="tag">FastAPI</span><span class="tag">Streamlit</span></div>
       </div>
@@ -304,9 +355,9 @@
           <span class="entry-meta">NLP service</span>
         </div>
         <p class="entry-desc">
-          A self-hosted service that detects duplicate questions by meaning rather than by matching
-          words: Sentence-BERT (all-MiniLM-L6-v2) embeddings searched through a FAISS cosine index
-          behind FastAPI, with a precision-first threshold and an automatic TF-IDF fallback.
+          A self-hosted service that detects duplicate questions <strong>by meaning rather than by
+          matching words</strong>: Sentence-BERT (all-MiniLM-L6-v2) embeddings searched through a FAISS
+          cosine index behind FastAPI, with a precision-first threshold and an automatic TF-IDF fallback.
         </p>
         <div class="tags"><span class="tag">Sentence-BERT</span><span class="tag">FAISS</span><span class="tag">FastAPI</span><span class="tag">pytest</span></div>
       </div>
@@ -317,8 +368,8 @@
           <span class="entry-meta">Medical imaging</span>
         </div>
         <p class="entry-desc">
-          Deep-learning analysis of DCE-MRI for breast-cancer subtype prediction, built around the
-          TCGA-BRCA cohort with a reproducible preprocessing and evaluation pipeline.
+          Deep-learning analysis of <strong>DCE-MRI</strong> for breast-cancer subtype prediction, built
+          around the TCGA-BRCA cohort with a reproducible preprocessing and evaluation pipeline.
         </p>
         <div class="tags"><span class="tag">PyTorch</span><span class="tag">Medical imaging</span><span class="tag">DCE-MRI</span></div>
       </div>
@@ -329,8 +380,8 @@
           <span class="entry-meta">Time series</span>
         </div>
         <p class="entry-desc">
-          LSTM-based forecasting on ERA5 reanalysis data, with a reproducible data pipeline and
-          quantitative evaluation of forecast skill.
+          LSTM-based forecasting on <strong>ERA5</strong> reanalysis data, with a reproducible data
+          pipeline and quantitative evaluation of forecast skill.
         </p>
         <div class="tags"><span class="tag">PyTorch</span><span class="tag">LSTM</span><span class="tag">ERA5</span></div>
       </div>
@@ -341,8 +392,8 @@
           <span class="entry-meta">Computer vision</span>
         </div>
         <p class="entry-desc">
-          A YOLOv5 vision-aided elevator dispatch system that uses object detection to inform
-          scheduling decisions.
+          A <strong>YOLOv5</strong> vision-aided elevator dispatch system that uses object detection to
+          inform scheduling decisions.
         </p>
         <div class="tags"><span class="tag">YOLOv5</span><span class="tag">OpenCV</span><span class="tag">PyTorch</span></div>
       </div>
@@ -353,8 +404,8 @@
           <span class="entry-meta">Applied AI</span>
         </div>
         <p class="entry-desc">
-          An AI media toolchain integrating Real-ESRGAN super-resolution and Demucs source
-          separation behind a unified interface.
+          An AI media toolchain integrating <strong>Real-ESRGAN</strong> super-resolution and
+          <strong>Demucs</strong> source separation behind a unified interface.
         </p>
         <div class="tags"><span class="tag">Real-ESRGAN</span><span class="tag">Demucs</span><span class="tag">PyTorch</span></div>
       </div>
@@ -368,9 +419,9 @@
         <p class="edu-school">Nanjing University of Information Science &amp; Technology (NUIST) — Nanjing, China</p>
         <p class="edu-date">Expected July 2027</p>
         <ul>
-          <li>First-author preprint on adaptive temporal granularity for causal video generation, released on Zenodo with a full replication artifact (<a href="https://doi.org/10.5281/zenodo.23395414" target="_blank" rel="noopener">DOI 10.5281/zenodo.23395414</a>).</li>
-          <li>Coursework delivered as full research packages — e.g., deep-learning system identification (Digital Image Processing) with a complete LaTeX paper, reproducible pipeline, and 19 auto-generated figures.</li>
-          <li>Independent research engineering: video world-model diagnostics (wmdrift), multi-agent autonomy (ARIA), and controlled vision studies (FER_2026).</li>
+          <li><strong>First-author preprint</strong> on adaptive temporal granularity for causal video generation, released on Zenodo with a full replication artifact (<a href="https://doi.org/10.5281/zenodo.23395414" target="_blank" rel="noopener">DOI 10.5281/zenodo.23395414</a>).</li>
+          <li>Coursework delivered as <strong>complete research packages</strong> — e.g., deep-learning system identification (Digital Image Processing) with a full LaTeX paper, a reproducible pipeline, and 19 auto-generated figures.</li>
+          <li>Independent research engineering across <strong>video world-model diagnostics</strong> (wmdrift), <strong>multi-agent autonomy</strong> (ARIA), and <strong>controlled vision studies</strong> (FER_2026).</li>
         </ul>
       </div>
     </section>
@@ -403,7 +454,7 @@
           <div class="skill-cat">Tools</div>
           <div class="skill-list">Git · Linux · Docker · Jupyter · Zotero</div>
         </div>
-         <div class="skill-row">
+        <div class="skill-row">
           <div class="skill-cat">AI Tools</div>
           <div class="skill-list">ClaudeCode · KiloCode · Cline · OpenCode</div>
         </div>
@@ -421,7 +472,7 @@
       <ul class="contact-list">
         <li><span class="label">Email</span> <a href="mailto:myprojectjisan@gmail.com">myprojectjisan@gmail.com</a></li>
         <li><span class="label">GitHub</span> <a href="https://github.com/j1s4nn" target="_blank" rel="noopener">github.com/j1s4nn</a></li>
-        <li><span class="label">Kaggle</span> <a href="https://www.kaggle.com/j1s4nn" target="_blank" rel="noopener">kaggle.com/j1s4nn</a></li>
+        <li><span class="label">Kaggle</span> <a href="https://www.kaggle.com/ajjisan" target="_blank" rel="noopener">kaggle.com/ajjisan</a></li>
         <li><span class="label">Location</span> Nanjing, China</li>
       </ul>
     </section>

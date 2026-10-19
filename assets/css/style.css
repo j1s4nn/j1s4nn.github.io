@@ -370,6 +370,39 @@ code {
 }
 
 
+/* ================= Highlights ================= */
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 14px;
+}
+
+.highlight {
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 14px 16px;
+  background: var(--bg-alt);
+}
+
+.highlight h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.highlight p {
+  margin: 0;
+  font-size: 0.94rem;
+  color: var(--muted);
+}
+
+.hl {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+
 /* ================= Education ================= */
 
 .edu-item {
@@ -506,6 +539,7 @@ code {
   }
 
   .interests,
+  .highlights,
   .skills {
     grid-template-columns:1fr;
   }

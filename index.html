@@ -3,19 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md Jisan Hossen — AI Undergraduate Researcher</title>
-  <meta name="description" content="Md Jisan Hossen — AI undergraduate researcher at NUIST, China. Multimodal AI, generative world models, LLM/NLP, computer vision, and deep learning. First-author preprint on adaptive temporal granularity for causal video generation (DOI 10.5281/zenodo.23395414). Expected graduation July 2027." />
+  <title>Md Jisan Hossen — AI Researcher · Robotics, Machine Vision &amp; World Models</title>
+  <meta name="description" content="Md Jisan Hossen — AI undergraduate researcher at NUIST, China. Multimodal AI, generative video world models, robotics science and engineering, machine vision for embodied intelligence, LLM/NLP, and computer vision. First-author preprints on adaptive temporal granularity for causal video generation (Zenodo DOIs 10.5281/zenodo.23395414 and 10.5281/zenodo.23693517). Expected graduation July 2027." />
   <meta name="author" content="Md Jisan Hossen" />
+  <meta name="keywords" content="Md Jisan Hossen, AI researcher, multimodal AI, world models, causal video generation, robotics science and engineering, machine vision, embodied intelligence, computer vision, deep learning, LLM, NLP, NUIST" />
+  <meta name="theme-color" content="#0f766e" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Md Jisan Hossen — AI Researcher · Robotics, Machine Vision &amp; World Models" />
+  <meta property="og:description" content="AI undergraduate researcher at NUIST working on generative video world models, robotics science and engineering, and machine vision for embodied intelligence." />
+  <meta property="og:url" content="https://j1s4nn.github.io/" />
+  <meta property="og:image" content="https://j1s4nn.github.io/assets/images/jisan.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Md Jisan Hossen — AI Researcher" />
+  <meta name="twitter:description" content="Generative video world models, robotics science and engineering, and machine vision for embodied intelligence." />
+  <meta name="twitter:image" content="https://j1s4nn.github.io/assets/images/jisan.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+  <script>document.documentElement.classList.add("js");</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Md Jisan Hossen",
+    "url": "https://j1s4nn.github.io/",
+    "image": "https://j1s4nn.github.io/assets/images/jisan.jpg",
+    "jobTitle": "AI Undergraduate Researcher",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Nanjing University of Information Science & Technology (NUIST)"
+    },
+    "knowsAbout": [
+      "Multimodal AI", "Generative World Models", "Causal Video Generation",
+      "Robotics Science and Engineering", "Machine Vision for Embodied Intelligence",
+      "Computer Vision", "Deep Learning", "LLM", "NLP"
+    ],
+    "sameAs": [
+      "https://github.com/j1s4nn",
+      "https://www.kaggle.com/ajjisan"
+    ]
+  }
+  </script>
 </head>
 <body id="top">
 
+  <!-- Scroll progress -->
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
   <!-- ===== Navigation ===== -->
-  <header class="nav">
+  <header class="nav" id="nav">
     <div class="nav-inner">
-      <span class="nav-name">Md Jisan Hossen</span>
-      <nav class="nav-links">
+      <a class="nav-name" href="#top">Md Jisan Hossen</a>
+      <nav class="nav-links" id="navLinks">
         <a href="#about">About</a>
         <a href="#highlights">Highlights</a>
         <a href="#research">Research</a>
@@ -29,18 +75,29 @@
 
   <!-- ===== Hero / Profile ===== -->
   <div class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+      <span class="grid-overlay"></span>
+    </div>
     <div class="wrap hero-grid">
-      <div class="hero-photo">
+      <div class="hero-photo" data-reveal>
+        <span class="hero-photo-ring" aria-hidden="true"></span>
         <img src="assets/images/jisan.jpg" alt="Portrait of Md Jisan Hossen" />
       </div>
       <div class="hero-info">
-        <h1 class="hero-name">Md Jisan Hossen</h1>
-        <p class="hero-role">AI Undergraduate Researcher</p>
-        <p class="hero-affil">Nanjing University of Information Science &amp; Technology (NUIST), China</p>
-        <p class="hero-grad">B.Sc. in Artificial Intelligence · Expected Graduation: July 2027</p>
-        <span class="hero-focus">Multimodal AI · Generative World Models · LLM/NLP · Computer Vision</span>
-        <div class="hero-contact">
-          <a class="btn" href="mailto:myprojectjisan@gmail.com">✉ Email</a>
+        <p class="hero-eyebrow" data-reveal>AI Undergraduate Researcher · NUIST, China</p>
+        <h1 class="hero-name gradient-text" data-reveal>Md Jisan Hossen</h1>
+        <p class="hero-role" data-reveal>Multimodal AI · Generative World Models · LLM/NLP · Computer Vision</p>
+        <p class="hero-affil" data-reveal>Nanjing University of Information Science &amp; Technology (NUIST), China</p>
+        <p class="hero-grad" data-reveal>B.Sc. in Artificial Intelligence · Expected Graduation: July 2027</p>
+        <div class="hero-focus" data-reveal>
+          <span class="focus-pill">Robotics Science and Engineering</span>
+          <span class="focus-pill">Machine Vision for Embodied Intelligence</span>
+        </div>
+        <div class="hero-contact" data-reveal>
+          <a class="btn btn-primary" href="mailto:myprojectjisan@gmail.com">✉ Email</a>
           <a class="btn" href="https://github.com/j1s4nn" target="_blank" rel="noopener">GitHub</a>
           <a class="btn" href="https://www.kaggle.com/ajjisan" target="_blank" rel="noopener">Kaggle</a>
           <a class="btn" href="#contact">Contact</a>
@@ -53,15 +110,15 @@
 
     <!-- ===== About ===== -->
     <section id="about" class="about">
-      <h2 class="section-title">About</h2>
-      <p>
+      <h2 class="section-title" data-reveal>About</h2>
+      <p data-reveal>
         I am an <strong>Artificial Intelligence undergraduate</strong> at
         <strong>Nanjing University of Information Science &amp; Technology (NUIST)</strong>, China,
         where I design, train, and rigorously evaluate deep learning systems. My interests span
         <strong>multimodal AI</strong>, <strong>generative world models</strong>, large language
         models, computer vision, and reproducible machine learning research.
       </p>
-      <p>
+      <p data-reveal>
         I work at the intersection of <strong>research engineering</strong> and
         <strong>applied AI</strong>: I build reproducible experiments, fair evaluation protocols, and
         quantitative analyses, then ship the result as a tool that other people can actually run. My
@@ -69,41 +126,65 @@
         LSTMs), building retrieval-augmented generation and agent pipelines with LangChain and FAISS,
         and writing the evaluation code that decides whether a model truly works.
       </p>
-      <p>
-        My research is <span class="hl">published</span>: my first-author preprint,
-        <em>Jev-Routed Temporal Granularity with Recovery and Hysteresis for Causal Video Generation</em>,
-        is released on <strong>Zenodo</strong>
-        (<a href="https://doi.org/10.5281/zenodo.23395414" target="_blank" rel="noopener">DOI 10.5281/zenodo.23395414</a>)
-        together with a <strong>full replication artifact</strong>. The study audits <em>when</em>
+      <p data-reveal>
+        My research is <span class="hl">published</span>: my first-author preprints on adaptive
+        temporal granularity for causal video generation are released on <strong>Zenodo</strong>
+        (<a href="https://doi.org/10.5281/zenodo.23395414" target="_blank" rel="noopener">DOI 10.5281/zenodo.23395414</a>
+        and <a href="https://doi.org/10.5281/zenodo.23693517" target="_blank" rel="noopener">DOI 10.5281/zenodo.23693517</a>)
+        together with <strong>full replication artifacts</strong>. The programme audits <em>when</em>
         adaptive temporal granularity genuinely pays off for causal video generators, evaluated on two
         GPUs with different compute characteristics.
       </p>
-      <p>
+      <p data-reveal>
         I am actively seeking <strong>AI/ML research internships</strong> and opportunities toward
-        <strong>graduate study (Master's)</strong> in multimodal AI, LLMs, and computer vision.
+        <strong>graduate study (Master's)</strong> in multimodal AI, world models, robotics, machine
+        vision, and computer vision.
       </p>
+    </section>
+
+    <!-- ===== Stats ===== -->
+    <section id="stats" class="stats-section" aria-label="At a glance">
+      <div class="stats">
+        <div class="stat" data-reveal>
+          <span class="stat-num" data-count="2">0</span>
+          <span class="stat-label">First-author preprints</span>
+        </div>
+        <div class="stat" data-reveal>
+          <span class="stat-num" data-count="2" data-suffix=" GPUs">0</span>
+          <span class="stat-label">Hardware audit · T4 + A100</span>
+        </div>
+        <div class="stat" data-reveal>
+          <span class="stat-num" data-count="0.798" data-decimals="3">0</span>
+          <span class="stat-label">Best intrinsic-probe AUROC</span>
+        </div>
+        <div class="stat" data-reveal>
+          <span class="stat-num" data-count="100" data-suffix="%">0</span>
+          <span class="stat-label">Peak benchmark accuracy</span>
+        </div>
+      </div>
     </section>
 
     <!-- ===== Highlights ===== -->
     <section id="highlights">
-      <h2 class="section-title">Highlights</h2>
+      <h2 class="section-title" data-reveal>Highlights</h2>
       <div class="highlights">
-        <div class="highlight">
-          <h3>First-author preprint · Zenodo DOI</h3>
+        <div class="highlight tilt" data-reveal>
+          <h3>Two first-author preprints · Zenodo DOIs</h3>
           <p>
-            Authored <em>Jev-Routed Temporal Granularity with Recovery and Hysteresis for Causal Video
-            Generation</em>, published on Zenodo with a complete, reproducible replication artifact.
+            Authored the <em>Jev-Routed</em> and <em>JevGAG + DDAG</em> studies on adaptive temporal
+            granularity for causal video world models, each published on Zenodo with a complete,
+            reproducible replication artifact.
           </p>
         </div>
-        <div class="highlight">
+        <div class="highlight tilt" data-reveal>
           <h3>Two-GPU, evidence-first audit</h3>
           <p>
             Measured adaptive temporal granularity on a <strong>Tesla T4</strong> and an
-            <strong>A100-SXM4-80GB</strong>; the text-only <strong>Jev</strong> oracle reached
-            <span class="hl">AUROC 0.788</span> where a hand-crafted baseline failed (0.491).
+            <strong>A100-SXM4-80GB</strong>; an intrinsic prefill probe reached
+            <span class="hl">AUROC 0.798</span> where a hand-crafted baseline failed (0.491).
           </p>
         </div>
-        <div class="highlight">
+        <div class="highlight tilt" data-reveal>
           <h3>Research packages, shipped complete</h3>
           <p>
             Projects delivered with <strong>automated figure generation</strong>,
@@ -111,7 +192,7 @@
             technical write-ups.
           </p>
         </div>
-        <div class="highlight">
+        <div class="highlight tilt" data-reveal>
           <h3>Controlled comparative studies</h3>
           <p>
             A strictly matched <strong>7-model</strong> facial-expression benchmark, and a Z-transform
@@ -124,21 +205,29 @@
 
     <!-- ===== Research Interests ===== -->
     <section id="research-interests">
-      <h2 class="section-title">Research Interests</h2>
+      <h2 class="section-title" data-reveal>Research Interests</h2>
       <div class="interests">
-        <div class="interest">
+        <div class="interest tilt" data-reveal>
+          <h3>Robotics Science and Engineering</h3>
+          <p>Autonomous and resilient robot systems, learning-based control, multi-agent autonomy, and the engineering that makes embodied agents reliable in the real world.</p>
+        </div>
+        <div class="interest tilt" data-reveal>
+          <h3>Machine Vision for Embodied Intelligence</h3>
+          <p>Vision that closes the perception–action loop: spatial understanding, visual odometry and world-model diagnostics, and representations that let agents act.</p>
+        </div>
+        <div class="interest tilt" data-reveal>
           <h3>Multimodal AI</h3>
           <p>Vision–language models, multimodal representation learning, and adaptive computation for generative video world models.</p>
         </div>
-        <div class="interest">
+        <div class="interest tilt" data-reveal>
           <h3>LLM / NLP</h3>
           <p>Language models, retrieval-augmented generation (RAG), autonomous agents, and semantic understanding.</p>
         </div>
-        <div class="interest">
+        <div class="interest tilt" data-reveal>
           <h3>Computer Vision</h3>
           <p>Image and video understanding, recognition systems, and medical imaging.</p>
         </div>
-        <div class="interest">
+        <div class="interest tilt" data-reveal>
           <h3>Deep Learning</h3>
           <p>Model design, controlled architecture comparisons, and reproducible evaluation.</p>
         </div>
@@ -147,14 +236,54 @@
 
     <!-- ===== Publications / Research Projects ===== -->
     <section id="research">
-      <h2 class="section-title">Publications &amp; Research Projects</h2>
-      <p class="note">
-        <strong>One first-author preprint</strong> (Zenodo, DOI) with a full replication artifact.
+      <h2 class="section-title" data-reveal>Publications &amp; Research Projects</h2>
+      <p class="note" data-reveal>
+        <strong>Two first-author preprints</strong> (Zenodo, DOIs) with full replication artifacts.
         Peer-reviewed publications: none yet. The research-grade projects below are self-directed
         studies; several are being written up as manuscripts.
       </p>
 
-      <div class="entry pub">
+      <!-- Featured: JevGAG + DDAG -->
+      <div class="entry pub featured" data-reveal>
+        <div class="entry-head">
+          <h3 class="entry-title">JevGAG + DDAG — Regime-Aware Adaptive Temporal Granularity for Causal Video World Models: When Does Adaptivity Pay?</h3>
+          <span class="entry-meta"><span class="badge-new">Latest</span> 2026 · Preprint (Zenodo)</span>
+        </div>
+        <p class="entry-desc">
+          <span class="entry-label">Preprint — DOI 10.5281/zenodo.23693517.</span> A two-part research
+          programme on <strong>adaptive temporal granularity</strong> for causal video generation and
+          interactive video world models: <em>Part 1 — JevGAG</em> (the report) audits when a generator
+          should spend fine per-frame compute and when a cheaper chunked mode is enough, and
+          <em>Part 2 — DDAG</em> (the method) turns those findings into a deployable, regime-aware rule.
+        </p>
+        <p class="entry-desc">
+          <span class="entry-label">Findings:</span> on a matched <strong>Tesla T4</strong> and
+          <strong>A100-80GB</strong> study of a causal diffusion backbone, the same mode pair sits on
+          <span class="hl">opposite sides</span> of the cost break-even; hand-crafted context statistics
+          cannot predict coarse-unsafe segments (AUROC <span class="hl">0.491</span>), while an
+          <span class="hl">intrinsic probe</span> on the generator's own prefill activations reaches
+          <span class="hl">AUROC 0.798</span> — yet it <em>inverts</em> to <span class="hl">0.143</span>
+          on the other GPU, and only a <span class="hl">multi-feature</span> model over the probe plus a
+          sampler convergence residual transfers across both (<span class="hl">0.842</span> /
+          <span class="hl">0.833</span>). A <span class="hl">training-free 25% latent blend</span> cuts
+          the switch-boundary seam by <span class="hl">25%</span> and improves fidelity, and the
+          <span class="hl">regime map</span> shows adaptivity pays only when the cheap mode is
+          <em>cheaper and worse</em> — the programme's honest headline is that the cheap mode was
+          <span class="hl">never worse</span>, so the optimal policy is a <em>fixed</em> mode and a
+          router is only worth deploying in a precisely stated region.
+        </p>
+        <div class="tags"><span class="tag">Preprint</span><span class="tag">Zenodo DOI</span><span class="tag">Causal Video Generation</span><span class="tag">Video World Models</span><span class="tag">Adaptive Compute</span><span class="tag">Efficient Inference</span><span class="tag">Jev</span><span class="tag">Uncertainty Quantification</span></div>
+        <p class="pub-links">
+          <a href="https://doi.org/10.5281/zenodo.23693517" target="_blank" rel="noopener">DOI</a>
+          <a href="https://github.com/j1s4nn/JevGAG" target="_blank" rel="noopener">Code &amp; artifacts</a>
+          <a href="https://j1s4nn.github.io/JevGAG/" target="_blank" rel="noopener">Project page</a>
+          <a href="https://www.kaggle.com/datasets/ajjisan/ddag-experiments" target="_blank" rel="noopener">Results</a>
+          <a href="https://www.kaggle.com/datasets/ajjisan/ddag-matched-frames" target="_blank" rel="noopener">Frames</a>
+        </p>
+      </div>
+
+      <!-- Preprint: Jev-Routed -->
+      <div class="entry pub" data-reveal>
         <div class="entry-head">
           <h3 class="entry-title">Jev-Routed Temporal Granularity with Recovery and Hysteresis for Causal Video Generation</h3>
           <span class="entry-meta">2026 · Preprint (Zenodo)</span>
@@ -201,19 +330,19 @@
         </p>
       </div>
 
-      <div class="entry">
+      <div class="entry" data-reveal>
         <div class="entry-head">
           <h3 class="entry-title"><a href="https://github.com/j1s4nn/jev-adaptive-granularity-WM" target="_blank" rel="noopener">jev-adaptive-granularity-WM — Replication Artifact</a></h3>
           <span class="entry-meta">2026 · Research artifact</span>
         </div>
         <p class="entry-desc">
           <span class="entry-label">Artifact:</span> the official code, locked protocols, calibration
-          freezes, and audit artifacts behind the preprint above — a <code>src/</code> package for
-          causal-rCM inference, controller, uncertainty, and evaluation; <strong>50</strong> audit,
-          calibration, and figure-generation scripts; <strong>34</strong> reproducible experiment job
-          definitions (phase 0–5c plus RQ3/RQ4); and JSON/JSONL/CSV results for every phase. The study
-          is deliberately <strong>evidence-preserving</strong>: negative and failed experiments are
-          reported as evidence.
+          freezes, and audit artifacts behind the <em>Jev-Routed</em> preprint — a <code>src/</code>
+          package for causal-rCM inference, controller, uncertainty, and evaluation;
+          <strong>50</strong> audit, calibration, and figure-generation scripts; <strong>34</strong>
+          reproducible experiment job definitions (phase 0–5c plus RQ3/RQ4); and JSON/JSONL/CSV results
+          for every phase. The study is deliberately <strong>evidence-preserving</strong>: negative and
+          failed experiments are reported as evidence.
         </p>
         <div class="tags"><span class="tag">PyTorch</span><span class="tag">Wan2.1</span><span class="tag">Diffusion Transformers</span><span class="tag">Kaggle</span><span class="tag">Reproducibility</span></div>
         <p class="pub-links">
@@ -224,7 +353,7 @@
         </p>
       </div>
 
-      <div class="entry">
+      <div class="entry" data-reveal>
         <div class="entry-head">
           <h3 class="entry-title"><a href="https://github.com/j1s4nn/wmdrift" target="_blank" rel="noopener">wmdrift — Diagnostics for Video World Models</a></h3>
           <span class="entry-meta">2026 · Research tool</span>
@@ -244,7 +373,7 @@
         <div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">PyTorch</span><span class="tag">LPIPS</span><span class="tag">CLIP</span></div>
       </div>
 
-      <div class="entry">
+      <div class="entry" data-reveal>
         <div class="entry-head">
           <h3 class="entry-title"><a href="https://github.com/j1s4nn/ARIA-Adaptive-Resilient-Intelligent-Autopilot-For-Drone" target="_blank" rel="noopener">ARIA — Resilient LLM-Controlled Drone Autopilot</a></h3>
           <span class="entry-meta">2026 · Multi-agent system</span>
@@ -264,7 +393,7 @@
         <div class="tags"><span class="tag">PyTorch</span><span class="tag">stable-baselines3</span><span class="tag">llama-cpp-python</span><span class="tag">CLIP</span><span class="tag">filterpy</span></div>
       </div>
 
-      <div class="entry">
+      <div class="entry" data-reveal>
         <div class="entry-head">
           <h3 class="entry-title"><a href="https://github.com/j1s4nn/FER_2026" target="_blank" rel="noopener">FER_2026 — Facial Expression Recognition: A Controlled 7-Model Study</a></h3>
           <span class="entry-meta">2026 · Comparative study</span>
@@ -283,7 +412,7 @@
         <div class="tags"><span class="tag">PyTorch</span><span class="tag">torchvision</span><span class="tag">scikit-learn</span><span class="tag">Gradio</span></div>
       </div>
 
-      <div class="entry">
+      <div class="entry" data-reveal>
         <div class="entry-head">
           <h3 class="entry-title"><a href="https://github.com/j1s4nn/DIP-ZTransform-DeepLearning-SystemID" target="_blank" rel="noopener">Deep Learning for LTI System Identification (Z-Transform)</a></h3>
           <span class="entry-meta">2025 · Course research (DIP)</span>
@@ -305,9 +434,9 @@
 
     <!-- ===== Projects (Applied / Engineering) ===== -->
     <section id="projects">
-      <h2 class="section-title">Projects</h2>
+      <h2 class="section-title" data-reveal>Projects</h2>
 
-      <div class="entry">
+      <div class="entry" data-reveal>
         <div class="entry-head">
           <h3 class="entry-title"><a href="https://github.com/j1s4nn/duomind" target="_blank" rel="noopener">duomind — Jev + Small Local LLM (System 1 / System 2)</a></h3>
           <span class="entry-meta">LLM system</span>
@@ -321,7 +450,7 @@
         <div class="tags"><span class="tag">Python</span><span class="tag">LLM</span><span class="tag">Jev</span><span class="tag">OpenAI-compatible</span><span class="tag">Ollama</span></div>
       </div>
 
-      <div class="entry">
+      <div class="entry" data-reveal>
         <div class="entry-head">
           <h3 class="entry-title"><a href="https://github.com/j1s4nn/jevXagent" target="_blank" rel="noopener">jevXagent — Transparent Proxy for AI Coding Agents</a></h3>
           <span class="entry-meta">Developer tooling</span>
@@ -336,7 +465,7 @@
         <div class="tags"><span class="tag">Python</span><span class="tag">LLM proxy</span><span class="tag">Routing</span><span class="tag">Cost optimization</span><span class="tag">Kilo Code</span></div>
       </div>
 
-      <div class="entry">
+      <div class="entry" data-reveal>
         <div class="entry-head">
           <h3 class="entry-title"><a href="https://github.com/j1s4nn/AI_Agent" target="_blank" rel="noopener">AI_Agent — Autonomous Research Agent (ReAct + RAG)</a></h3>
           <span class="entry-meta">LLM agent</span>
@@ -349,7 +478,7 @@
         <div class="tags"><span class="tag">LangChain</span><span class="tag">FAISS</span><span class="tag">OpenAI API</span><span class="tag">FastAPI</span><span class="tag">Streamlit</span></div>
       </div>
 
-      <div class="entry">
+      <div class="entry" data-reveal>
         <div class="entry-head">
           <h3 class="entry-title"><a href="https://github.com/j1s4nn/duplicate-question-pairs" target="_blank" rel="noopener">DuplicateIQ — Semantic Duplicate Question Detection</a></h3>
           <span class="entry-meta">NLP service</span>
@@ -362,7 +491,7 @@
         <div class="tags"><span class="tag">Sentence-BERT</span><span class="tag">FAISS</span><span class="tag">FastAPI</span><span class="tag">pytest</span></div>
       </div>
 
-      <div class="entry">
+      <div class="entry" data-reveal>
         <div class="entry-head">
           <h3 class="entry-title"><a href="https://github.com/j1s4nn/TCGA-BRCA-Medical-AI-Analysis-MRI-Based-Breast-Cancer-Subtype-Prediction" target="_blank" rel="noopener">TCGA-BRCA Medical AI — MRI-Based Breast-Cancer Subtype Prediction</a></h3>
           <span class="entry-meta">Medical imaging</span>
@@ -374,7 +503,7 @@
         <div class="tags"><span class="tag">PyTorch</span><span class="tag">Medical imaging</span><span class="tag">DCE-MRI</span></div>
       </div>
 
-      <div class="entry">
+      <div class="entry" data-reveal>
         <div class="entry-head">
           <h3 class="entry-title"><a href="https://github.com/j1s4nn/atmosense-climate-ai" target="_blank" rel="noopener">atmosense-climate-ai — LSTM Climate Forecasting</a></h3>
           <span class="entry-meta">Time series</span>
@@ -386,7 +515,7 @@
         <div class="tags"><span class="tag">PyTorch</span><span class="tag">LSTM</span><span class="tag">ERA5</span></div>
       </div>
 
-      <div class="entry">
+      <div class="entry" data-reveal>
         <div class="entry-head">
           <h3 class="entry-title"><a href="https://github.com/j1s4nn/Smart_Elevator_Vision_Aided_Dispatch_system" target="_blank" rel="noopener">Smart Elevator — Vision-Aided Dispatch System</a></h3>
           <span class="entry-meta">Computer vision</span>
@@ -398,7 +527,7 @@
         <div class="tags"><span class="tag">YOLOv5</span><span class="tag">OpenCV</span><span class="tag">PyTorch</span></div>
       </div>
 
-      <div class="entry">
+      <div class="entry" data-reveal>
         <div class="entry-head">
           <h3 class="entry-title"><a href="https://github.com/j1s4nn/Converge" target="_blank" rel="noopener">Converge — AI Media Toolchain</a></h3>
           <span class="entry-meta">Applied AI</span>
@@ -413,13 +542,13 @@
 
     <!-- ===== Education ===== -->
     <section id="education">
-      <h2 class="section-title">Education</h2>
-      <div class="edu-item">
+      <h2 class="section-title" data-reveal>Education</h2>
+      <div class="edu-item" data-reveal>
         <p class="edu-degree">Bachelor of Science in Artificial Intelligence</p>
         <p class="edu-school">Nanjing University of Information Science &amp; Technology (NUIST) — Nanjing, China</p>
         <p class="edu-date">Expected July 2027</p>
         <ul>
-          <li><strong>First-author preprint</strong> on adaptive temporal granularity for causal video generation, released on Zenodo with a full replication artifact (<a href="https://doi.org/10.5281/zenodo.23395414" target="_blank" rel="noopener">DOI 10.5281/zenodo.23395414</a>).</li>
+          <li><strong>Two first-author preprints</strong> on adaptive temporal granularity for causal video generation, released on Zenodo with full replication artifacts (<a href="https://doi.org/10.5281/zenodo.23395414" target="_blank" rel="noopener">DOI 10.5281/zenodo.23395414</a>; <a href="https://doi.org/10.5281/zenodo.23693517" target="_blank" rel="noopener">DOI 10.5281/zenodo.23693517</a>).</li>
           <li>Coursework delivered as <strong>complete research packages</strong> — e.g., deep-learning system identification (Digital Image Processing) with a full LaTeX paper, a reproducible pipeline, and 19 auto-generated figures.</li>
           <li>Independent research engineering across <strong>video world-model diagnostics</strong> (wmdrift), <strong>multi-agent autonomy</strong> (ARIA), and <strong>controlled vision studies</strong> (FER_2026).</li>
         </ul>
@@ -428,33 +557,37 @@
 
     <!-- ===== Skills ===== -->
     <section id="skills">
-      <h2 class="section-title">Skills</h2>
+      <h2 class="section-title" data-reveal>Skills</h2>
       <div class="skills">
-        <div class="skill-row">
+        <div class="skill-row" data-reveal>
           <div class="skill-cat">Programming</div>
           <div class="skill-list">Python · Java · SQL</div>
         </div>
-        <div class="skill-row">
+        <div class="skill-row" data-reveal>
           <div class="skill-cat">Deep Learning</div>
           <div class="skill-list">PyTorch · TensorFlow · Keras · diffusion models · video generation</div>
         </div>
-        <div class="skill-row">
+        <div class="skill-row" data-reveal>
           <div class="skill-cat">Machine Learning</div>
           <div class="skill-list">scikit-learn · NumPy · Pandas</div>
         </div>
-        <div class="skill-row">
+        <div class="skill-row" data-reveal>
           <div class="skill-cat">Computer Vision</div>
           <div class="skill-list">OpenCV · CNNs · image processing</div>
         </div>
-        <div class="skill-row">
+        <div class="skill-row" data-reveal>
+          <div class="skill-cat">Robotics / Embodied AI</div>
+          <div class="skill-list">robot autonomy · learning-based control · visual odometry · world-model diagnostics</div>
+        </div>
+        <div class="skill-row" data-reveal>
           <div class="skill-cat">LLM / NLP</div>
           <div class="skill-list">Transformers · embeddings · RAG · agents (LangChain, FAISS, Sentence-BERT)</div>
         </div>
-        <div class="skill-row">
+        <div class="skill-row" data-reveal>
           <div class="skill-cat">Tools</div>
           <div class="skill-list">Git · Linux · Docker · Jupyter · Zotero</div>
         </div>
-        <div class="skill-row">
+        <div class="skill-row" data-reveal>
           <div class="skill-cat">AI Tools</div>
           <div class="skill-list">ClaudeCode · KiloCode · Cline · OpenCode</div>
         </div>
@@ -463,13 +596,13 @@
 
     <!-- ===== Contact ===== -->
     <section id="contact" class="contact">
-      <h2 class="section-title">Contact</h2>
-      <p>
+      <h2 class="section-title" data-reveal>Contact</h2>
+      <p data-reveal>
         I am open to <strong>AI/ML internships</strong>, <strong>research assistant positions</strong>,
-        and conversations about <strong>Master's opportunities</strong> in multimodal AI, LLMs, and
-        computer vision.
+        and conversations about <strong>Master's opportunities</strong> in multimodal AI, world models,
+        robotics, machine vision, and computer vision.
       </p>
-      <ul class="contact-list">
+      <ul class="contact-list" data-reveal>
         <li><span class="label">Email</span> <a href="mailto:myprojectjisan@gmail.com">myprojectjisan@gmail.com</a></li>
         <li><span class="label">GitHub</span> <a href="https://github.com/j1s4nn" target="_blank" rel="noopener">github.com/j1s4nn</a></li>
         <li><span class="label">Kaggle</span> <a href="https://www.kaggle.com/ajjisan" target="_blank" rel="noopener">kaggle.com/ajjisan</a></li>
@@ -487,5 +620,8 @@
     </div>
   </footer>
 
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

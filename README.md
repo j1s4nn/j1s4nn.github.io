@@ -11,7 +11,8 @@ Live at: https://j1s4nn.github.io
 .
 ├── index.html              # Single-page academic homepage
 ├── assets/
-│   ├── css/style.css       # Styling
+│   ├── css/style.css       # Styling (modern-academic visual system)
+│   ├── js/main.js          # Scroll progress, reveal, counters, tilt
 │   └── images/jisan.jpg    # Profile photo
 ├── .nojekyll               # Serve as a plain static site (no Jekyll)
 └── README.md
@@ -19,6 +20,11 @@ Live at: https://j1s4nn.github.io
 
 ## Featured
 
+- **Preprint (Zenodo, 2026):** *JevGAG + DDAG — Regime-Aware Adaptive Temporal Granularity for
+  Causal Video World Models: When Does Adaptivity Pay?* —
+  DOI [10.5281/zenodo.23693517](https://doi.org/10.5281/zenodo.23693517).
+  Code and artifacts: [JevGAG](https://github.com/j1s4nn/JevGAG).
+  Project page: <https://j1s4nn.github.io/JevGAG/>.
 - **Preprint (Zenodo, 2026):** *Jev-Routed Temporal Granularity with Recovery and Hysteresis for
   Causal Video Generation* — DOI [10.5281/zenodo.23395414](https://doi.org/10.5281/zenodo.23395414).
   Code and replication artifact: [jev-adaptive-granularity-WM](https://github.com/j1s4nn/jev-adaptive-granularity-WM).
@@ -26,7 +32,7 @@ Live at: https://j1s4nn.github.io
 
 ## Sections
 
-About · Research Interests · Publications & Research Projects · Projects ·
+About · Stats · Highlights · Research Interests · Publications & Research Projects · Projects ·
 Education · Skills · Contact
 
 ## Local preview

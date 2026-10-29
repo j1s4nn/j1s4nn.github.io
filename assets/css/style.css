@@ -153,6 +153,42 @@ strong { color: var(--ink); }
 .nav-links a.active::after { transform: scaleX(1); }
 .nav-links a.active { color: var(--accent); font-weight: 600; }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font: inherit;
+  font-size: .86rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--accent);
+  background: #fff;
+  border: 1px solid var(--accent-line);
+  padding: 8px 13px;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: var(--shadow-1);
+  white-space: nowrap;
+  transition: transform .28s var(--ease), box-shadow .28s var(--ease),
+              background .28s var(--ease), color .28s var(--ease), border-color .28s var(--ease);
+}
+.lang-toggle::before { content: "\1F310"; font-size: .95em; line-height: 1; }
+.lang-toggle:hover {
+  transform: translateY(-2px);
+  background: var(--grad);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: var(--shadow-2);
+}
+.lang-toggle:active { transform: translateY(0) scale(.97); }
+
 /* ================= Layout ================= */
 
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 22px; }
@@ -693,6 +729,31 @@ code {
 }
 .to-top.show { opacity: 1; transform: none; pointer-events: auto; }
 .to-top:hover { transform: translateY(-4px) scale(1.05); }
+
+/* ================= Chinese (zh-CN) typography ================= */
+
+html[lang="zh-CN"] body,
+html[lang="zh-CN"] .btn,
+html[lang="zh-CN"] .tag,
+html[lang="zh-CN"] .lang-toggle,
+html[lang="zh-CN"] .note,
+html[lang="zh-CN"] .skill-list {
+  font-family: "Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei",
+               "Hiragino Sans GB", "Source Han Sans SC", sans-serif;
+}
+
+html[lang="zh-CN"] h1,
+html[lang="zh-CN"] h2,
+html[lang="zh-CN"] h3,
+html[lang="zh-CN"] .nav-name,
+html[lang="zh-CN"] .stat-num,
+html[lang="zh-CN"] .edu-degree {
+  font-family: "Newsreader", "Noto Serif SC", "Source Han Serif SC",
+               "Songti SC", "SimSun", Georgia, serif;
+}
+
+html[lang="zh-CN"] .hero-name { letter-spacing: 0; }
+html[lang="zh-CN"] .section-title { letter-spacing: 0; }
 
 /* ================= Responsive ================= */
 

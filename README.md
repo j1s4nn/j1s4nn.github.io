@@ -13,6 +13,7 @@ Live at: https://j1s4nn.github.io
 ├── assets/
 │   ├── css/style.css       # Styling (modern-academic visual system)
 │   ├── js/main.js          # Scroll progress, reveal, counters, tilt
+│   ├── js/i18n.js          # EN / 中文 toggle (data-i18n dictionary)
 │   └── images/jisan.jpg    # Profile photo
 ├── .nojekyll               # Serve as a plain static site (no Jekyll)
 └── README.md
@@ -34,6 +35,13 @@ Live at: https://j1s4nn.github.io
 
 About · Stats · Highlights · Research Interests · Publications & Research Projects · Projects ·
 Education · Skills · Contact
+
+## Bilingual (EN / 中文)
+
+A language button in the navigation toggles the whole page between English and Simplified Chinese.
+Translations live in `assets/js/i18n.js` as a `data-i18n` key dictionary; proper nouns (name, NUIST,
+tool names, DOIs, paper titles, metric values) are intentionally kept in English. The choice is
+persisted in `localStorage`, and the English text is captured at load so switching back is exact.
 
 ## Local preview
 

@@ -48,18 +48,18 @@
     /* ---- About ---- */
     "about.p1": "我是中国<strong>南京信息工程大学（NUIST）</strong>的<strong>人工智能本科生</strong>，在这里设计、训练并严格评估深度学习系统。我的研究兴趣涵盖<strong>多模态 AI</strong>、<strong>生成式世界模型</strong>、大语言模型、计算机视觉以及可复现的机器学习研究。",
     "about.p2": "我的工作处于<strong>研究工程</strong>与<strong>应用 AI</strong> 的交叉点：我构建可复现的实验、公平的评估协议与定量分析，并把成果交付为他人真正可运行的工具。我的日常工作基于 PyTorch —— 设计并微调架构（CNN、Transformer、LSTM），使用 LangChain 与 FAISS 搭建检索增强生成（RAG）与智能体流水线，并编写决定模型是否真正有效的评估代码。",
-    "about.p3": "我的研究已<span class=\"hl\">发表</span>：关于因果视频生成中自适应时间粒度的第一作者预印本已在 <strong>Zenodo</strong> 发布（<a href=\"https://doi.org/10.5281/zenodo.23395414\" target=\"_blank\" rel=\"noopener\">DOI 10.5281/zenodo.23395414</a> 与 <a href=\"https://doi.org/10.5281/zenodo.23693517\" target=\"_blank\" rel=\"noopener\">DOI 10.5281/zenodo.23693517</a>），并附带<strong>完整的复现工件</strong>。该研究审计了自适应时间粒度对因果视频生成器<em>何时</em>才真正有价值，并在两款计算特性不同的 GPU 上进行了评估。",
+    "about.p3": "我的研究正处于<span class=\"hl\">同行评审</span>阶段：关于因果视频生成中自适应时间粒度的两篇第一作者论文手稿目前正在国际期刊接受评审 —— 一篇投往 <strong>IEEE Transactions on Circuits and Systems for Video Technology（TCSVT）</strong>，另一篇投往 <strong>Computer Vision and Image Understanding（CVIU）</strong>。两项工作也已作为开放预印本发布于 <strong>Zenodo</strong>（<a href=\"https://doi.org/10.5281/zenodo.23395414\" target=\"_blank\" rel=\"noopener\">DOI 10.5281/zenodo.23395414</a> 与 <a href=\"https://doi.org/10.5281/zenodo.23693517\" target=\"_blank\" rel=\"noopener\">DOI 10.5281/zenodo.23693517</a>），并附带<strong>完整的复现工件</strong>。该研究审计了自适应时间粒度对因果视频生成器<em>何时</em>才真正有价值，并在两款计算特性不同的 GPU 上进行了评估。",
     "about.p4": "我正在积极寻找<strong>AI/ML 研究实习</strong>机会，以及多模态 AI、世界模型、机器人、机器视觉与计算机视觉方向<strong>研究生（硕士）</strong>深造的机会。",
 
     /* ---- Stats ---- */
-    "stat.preprints": "第一作者预印本",
+    "stat.preprints": "第一作者在审论文",
     "stat.gpus": "硬件审计 · T4 + A100",
     "stat.auroc": "最佳内在探针 AUROC",
     "stat.accuracy": "基准最高准确率",
 
     /* ---- Highlights ---- */
-    "hl1.title": "两篇第一作者预印本 · Zenodo DOI",
-    "hl1.p": "撰写了关于因果视频世界模型自适应时间粒度的 <em>Jev-Routed</em> 与 <em>JevGAG + DDAG</em> 研究，两者均发表于 Zenodo，并附带完整、可复现的复现工件。",
+    "hl1.title": "两篇第一作者论文 · 同行评审中",
+    "hl1.p": "撰写了关于因果视频世界模型自适应时间粒度的 <em>Jev-Routed</em> 与 <em>JevGAG + DDAG</em> 研究，现正于 <strong>IEEE TCSVT</strong> 与 <strong>CVIU</strong> 接受同行评审，并在 Zenodo 提供开放预印本与完整、可复现的复现工件。",
     "hl2.title": "双 GPU、证据优先的审计",
     "hl2.p": "在 <strong>Tesla T4</strong> 与 <strong>A100-SXM4-80GB</strong> 上测量自适应时间粒度；当手工设计的基线失效（0.491）时，内在预填充探针达到 <span class=\"hl\">AUROC 0.798</span>。",
     "hl3.title": "完整交付的研究包",
@@ -82,14 +82,14 @@
     "int.dl.p": "模型设计、受控的架构对比与可复现评估。",
 
     /* ---- Publications ---- */
-    "res.note": "<strong>两篇第一作者预印本</strong>（Zenodo，DOI），附完整复现工件。同行评审论文：暂无。以下研究级项目均为自主研究，其中若干正在撰写为论文手稿。",
+    "res.note": "<strong>两篇第一作者论文手稿</strong>目前正在国际期刊接受<span class=\"hl\">同行评审</span> —— <strong>IEEE TCSVT</strong> 与 <strong>Computer Vision and Image Understanding（CVIU）</strong> —— 并在 <strong>Zenodo</strong> 提供开放预印本与完整复现工件。以下研究级项目均为自主研究。",
 
-    "pub.jevgag.meta": "<span class=\"badge-new\">最新</span> 2026 · 预印本（Zenodo）",
-    "pub.jevgag.d1": "<span class=\"entry-label\">预印本 — DOI 10.5281/zenodo.23693517。</span>一项关于因果视频生成与交互式视频世界模型中<strong>自适应时间粒度</strong>的两部分研究计划：<em>第 1 部分 — JevGAG</em>（报告）审计生成器何时应投入精细的逐帧计算、何时使用更廉价的分块模式即可；<em>第 2 部分 — DDAG</em>（方法）将这些发现转化为可部署的、感知工作区（regime-aware）的规则。",
+    "pub.jevgag.meta": "<span class=\"badge-review\">同行评审中</span> 2026 · Computer Vision and Image Understanding（CVIU）",
+    "pub.jevgag.d1": "<span class=\"entry-label\">同行评审中 — Computer Vision and Image Understanding（CVIU），稿件编号 CVIU-26-3570。开放预印本 — DOI 10.5281/zenodo.23693517。</span>一项关于因果视频生成与交互式视频世界模型中<strong>自适应时间粒度</strong>的两部分研究计划：<em>第 1 部分 — JevGAG</em>（报告）审计生成器何时应投入精细的逐帧计算、何时使用更廉价的分块模式即可；<em>第 2 部分 — DDAG</em>（方法）将这些发现转化为可部署的、感知工作区（regime-aware）的规则。",
     "pub.jevgag.d2": "<span class=\"entry-label\">发现：</span>在一项针对因果扩散骨干网络、在匹配的 <strong>Tesla T4</strong> 与 <strong>A100-80GB</strong> 上的研究中，同一模式对位于成本盈亏平衡的<span class=\"hl\">两侧</span>；手工设计的上下文统计无法预测“粗粒度不安全”的片段（AUROC <span class=\"hl\">0.491</span>），而生成器自身预填充激活上的<span class=\"hl\">内在探针</span>达到 <span class=\"hl\">AUROC 0.798</span> —— 但在另一块 GPU 上却<em>反转</em>为 <span class=\"hl\">0.143</span>；只有对探针与采样器收敛残差使用<span class=\"hl\">多特征</span>模型才能在两者间迁移（<span class=\"hl\">0.842</span> / <span class=\"hl\">0.833</span>）。一种<span class=\"hl\">免训练的 25% 潜空间混合</span>将切换边界接缝削减 <span class=\"hl\">25%</span> 并提升保真度；<span class=\"hl\">工作区图</span>表明只有当廉价模式<em>更便宜且更差</em>时自适应才划算 —— 该计划诚实的结论是廉价模式<span class=\"hl\">从不更差</span>，因此最优策略是<em>固定</em>模式，只有在精确界定的区域内才值得部署路由器。",
 
-    "pub.jevrouted.meta": "2026 · 预印本（Zenodo）",
-    "pub.jevrouted.d1": "<span class=\"entry-label\">预印本 — DOI 10.5281/zenodo.23395414。</span>因果视频生成器一次生成一个时间块的 rollout，这促使人只在片段困难处投入精细的逐帧计算。实现这一想法需要三个通常被假设而非被测量的前提：在部署硬件上确实更廉价的模式、能在生成前预测困难片段的信号，以及能独立验证这一权衡的终点指标。",
+    "pub.jevrouted.meta": "<span class=\"badge-review\">同行评审中</span> 2026 · IEEE Transactions on Circuits and Systems for Video Technology（TCSVT）",
+    "pub.jevrouted.d1": "<span class=\"entry-label\">同行评审中 — IEEE Transactions on Circuits and Systems for Video Technology（TCSVT），稿件编号 TCSVT-32491-2026。开放预印本 — DOI 10.5281/zenodo.23395414。</span>因果视频生成器一次生成一个时间块的 rollout，这促使人只在片段困难处投入精细的逐帧计算。实现这一想法需要三个通常被假设而非被测量的前提：在部署硬件上确实更廉价的模式、能在生成前预测困难片段的信号，以及能独立验证这一权衡的终点指标。",
     "pub.jevrouted.d2": "<span class=\"entry-label\">方法：</span>在 <strong>Causal-rCM</strong>（Wan2.1-T2V-1.3B-480p 因果文生视频扩散模型）上端到端审计这三个前提，按片段在逐帧模式（<code>c1-1</code>）、三帧块模式（<code>c3-3</code>）以及近乎零成本的 <strong>hold</strong> 模式之间路由，并采用带滞后（hysteresis）与强制恢复的双阈值控制器。路由由纯文本的 <strong>Jev</strong> System One 预言机驱动，它在片段生成前回答分类型的难度、漂移风险与运动类别问题。审计在 <strong>16 GB Tesla T4</strong> 与 <strong>A100-SXM4-80GB</strong> 上运行。",
     "pub.jevrouted.d3": "<span class=\"entry-label\">发现：</span>成本是<strong>硬件相关的</strong> —— 在 T4 上，粗粒度前向是精细前向的 <span class=\"hl\">3.01×</span>，高于 <span class=\"hl\">2.33×</span> 的盈亏平衡（因此粗粒度从不更便宜）；但在 A100 上该比值降至 <span class=\"hl\">1.60–1.75</span>，粗粒度在 DiT 时间上快 <span class=\"hl\">1.46×</span>；预先注册的手工信号失效（AUROC 0.491），而纯文本 Jev 预言机达到 <span class=\"hl\">AUROC 0.788 [0.575, 0.946]</span>，每次决策 <span class=\"hl\">0.67 s</span>；滞后与恢复减少了切换次数（T4 上 <span class=\"hl\">0.50→0.38</span>；A100 注入噪声下 <span class=\"hl\">0.92→0.50</span>）且不增加后悔值；在 24 条全新 A100 提示上，单次决策的 Jev 策略节省 <span class=\"hl\">1.78 s</span> 的 DiT 时间与 <span class=\"hl\">7.39 s</span> 的总时间，代价是 <span class=\"hl\">−0.020</span> 的 CLIP 主体一致性 —— 这是一种权衡，而非全面占优。",
 
@@ -154,7 +154,7 @@
     "edu.degree": "人工智能专业 理学学士",
     "edu.school": "南京信息工程大学（NUIST）— 中国 南京",
     "edu.date": "预计 2027 年 7 月",
-    "edu.li1": "关于因果视频生成中自适应时间粒度的<strong>两篇第一作者预印本</strong>，已在 Zenodo 发布并附完整复现工件（<a href=\"https://doi.org/10.5281/zenodo.23395414\" target=\"_blank\" rel=\"noopener\">DOI 10.5281/zenodo.23395414</a>；<a href=\"https://doi.org/10.5281/zenodo.23693517\" target=\"_blank\" rel=\"noopener\">DOI 10.5281/zenodo.23693517</a>）。",
+    "edu.li1": "关于因果视频生成中自适应时间粒度的<strong>两篇第一作者论文手稿</strong>，目前正在 <strong>IEEE TCSVT</strong> 与 <strong>Computer Vision and Image Understanding（CVIU）</strong> 接受同行评审，并在 Zenodo 提供开放预印本与完整复现工件（<a href=\"https://doi.org/10.5281/zenodo.23395414\" target=\"_blank\" rel=\"noopener\">DOI 10.5281/zenodo.23395414</a>；<a href=\"https://doi.org/10.5281/zenodo.23693517\" target=\"_blank\" rel=\"noopener\">DOI 10.5281/zenodo.23693517</a>）。",
     "edu.li2": "课程作业以<strong>完整研究包</strong>形式交付 —— 例如深度学习系统辨识（数字图像处理），包含完整 LaTeX 论文、可复现流水线与 19 张自动生成图表。",
     "edu.li3": "独立研究工程涵盖<strong>视频世界模型诊断</strong>（wmdrift）、<strong>多智能体自主性</strong>（ARIA）与<strong>受控视觉研究</strong>（FER_2026）。",
 
@@ -189,6 +189,7 @@
 
     /* ---- Tags (conceptual only; tech names kept in English) ---- */
     "tag.preprint": "预印本",
+    "tag.underreview": "同行评审中",
     "tag.causal": "因果视频生成",
     "tag.vwm": "视频世界模型",
     "tag.adaptive": "自适应计算",
@@ -204,7 +205,7 @@
   };
 
   var TITLE_ZH = "Md Jisan Hossen — AI 研究员 · 机器人、机器视觉与世界模型";
-  var DESC_ZH = "Md Jisan Hossen —— 中国 NUIST 的人工智能本科生研究员。研究多模态 AI、生成式视频世界模型、机器人科学与工程、面向具身智能的机器视觉、LLM/NLP 与计算机视觉。关于因果视频生成中自适应时间粒度的第一作者预印本（Zenodo DOI 10.5281/zenodo.23395414 与 10.5281/zenodo.23693517）。预计 2027 年 7 月毕业。";
+  var DESC_ZH = "Md Jisan Hossen —— 中国 NUIST 的人工智能本科生研究员。研究多模态 AI、生成式视频世界模型、机器人科学与工程、面向具身智能的机器视觉、LLM/NLP 与计算机视觉。关于因果视频生成中自适应时间粒度的两篇第一作者论文正在 IEEE TCSVT 与 Computer Vision and Image Understanding 接受同行评审，并在 Zenodo 提供开放预印本（DOI 10.5281/zenodo.23395414 与 10.5281/zenodo.23693517）。预计 2027 年 7 月毕业。";
 
   function safeGet(k) { try { return window.localStorage.getItem(k); } catch (e) { return null; } }
   function safeSet(k, v) { try { window.localStorage.setItem(k, v); } catch (e) { /* ignore */ } }

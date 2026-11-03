@@ -616,6 +616,20 @@ section:hover .section-title::after { width: 100%; }
   50%     { box-shadow: 0 0 0 6px rgba(79,70,229,0); }
 }
 
+.badge-review {
+  display: inline-block;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, #b45309, #d97706);
+  padding: 3px 9px;
+  border-radius: 999px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
 .pub-links { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 12px 0 0; font-size: .9rem; }
 .pub-links a {
   position: relative;

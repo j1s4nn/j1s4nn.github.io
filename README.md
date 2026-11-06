@@ -21,16 +21,17 @@ Live at: https://j1s4nn.github.io
 
 ## Featured
 
-- **Under review (2026) · Computer Vision and Image Understanding (CVIU):** *JevGAG + DDAG —
+- **Under submission (2026) · Computer Vision and Image Understanding (CVIU):** *JevGAG + DDAG —
   Regime-Aware Adaptive Temporal Granularity for Causal Video World Models: When Does Adaptivity
   Pay?* (manuscript CVIU-26-3570). Open preprint — DOI
   [10.5281/zenodo.23693517](https://doi.org/10.5281/zenodo.23693517).
   Code and artifacts: [JevGAG](https://github.com/j1s4nn/JevGAG).
   Project page: <https://j1s4nn.github.io/JevGAG/>.
-- **Under review (2026) · IEEE Transactions on Circuits and Systems for Video Technology (TCSVT):**
-  *Jev-Routed Temporal Granularity with Recovery and Hysteresis for Causal Video Generation*
-  (manuscript TCSVT-32491-2026). Open preprint — DOI
-  [10.5281/zenodo.23395414](https://doi.org/10.5281/zenodo.23395414).
+- **Under submission (2026) · Multimedia Tools and Applications (MTA):**
+  *Jev-Routed Temporal Granularity with Recovery and Hysteresis for Causal Video Generation*.
+  Open preprint — v2 DOI
+  [10.5281/zenodo.23984346](https://doi.org/10.5281/zenodo.23984346) (v1:
+  [10.5281/zenodo.23395414](https://doi.org/10.5281/zenodo.23395414)).
   Code and replication artifact: [jev-adaptive-granularity-WM](https://github.com/j1s4nn/jev-adaptive-granularity-WM).
   Project page: <https://j1s4nn.github.io/jev-adaptive-granularity-WM/>.
 

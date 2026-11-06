@@ -82,7 +82,7 @@
     "int.dl.p": "模型设计、受控的架构对比与可复现评估。",
 
     /* ---- Publications ---- */
-    "res.note": "<strong>两篇第一作者论文手稿</strong>目前正在国际期刊接受<span class=\"hl\">同行评审</span> —— <strong>IEEE TCSVT</strong> 与 <strong>Computer Vision and Image Understanding（CVIU）</strong> —— 并在 <strong>Zenodo</strong> 提供开放预印本与完整复现工件。以下研究级项目均为自主研究。",
+    "res.note": "<strong>两篇第一作者论文手稿</strong>目前正向国际期刊<span class=\"hl\">投稿</span> —— <strong>Multimedia Tools and Applications（MTA）</strong> 与 <strong>Computer Vision and Image Understanding（CVIU）</strong> —— 并在 <strong>Zenodo</strong> 提供开放预印本与完整复现工件。以下研究级项目均为自主研究。",
 
     "pub.jevgag.meta": "<span class=\"badge-review\">同行评审中</span> 2026 · Computer Vision and Image Understanding（CVIU）",
     "pub.jevgag.d1": "<span class=\"entry-label\">同行评审中 — Computer Vision and Image Understanding（CVIU），稿件编号 CVIU-26-3570。开放预印本 — DOI 10.5281/zenodo.23693517。</span>一项关于因果视频生成与交互式视频世界模型中<strong>自适应时间粒度</strong>的两部分研究计划：<em>第 1 部分 — JevGAG</em>（报告）审计生成器何时应投入精细的逐帧计算、何时使用更廉价的分块模式即可；<em>第 2 部分 — DDAG</em>（方法）将这些发现转化为可部署的、感知工作区（regime-aware）的规则。",
